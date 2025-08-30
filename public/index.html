@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>DMS — Pairing (Mock)</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <main class="card">
+    <h1>🔗 DMS Pairing (Mock)</h1>
+    <p>Enter your phone number (with country code) and the password to simulate pairing.</p>
+
+    <form id="pairForm">
+      <input id="phone" type="tel" placeholder="+2349070810971" required minlength="6" maxlength="15" pattern="^\\+?[0-9]{6,15}$" />
+      <input id="password" type="password" placeholder="Password" required />
+      <button type="submit">Get Pairing Code</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Your Pairing Code (Mock)</h2>
+      <p class="code" id="code">—</p>
+      <ol>
+        <li>This is a demo pairing code (not real WhatsApp).</li>
+        <li>Use it to test your flow and UI.</li>
+      </ol>
+    </div>
+
+    <footer>
+      <span id="brand">DMS • Mock Demo</span>
+    </footer>
+  </main>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
